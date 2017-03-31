@@ -42,18 +42,23 @@ What the tool does
 		
 1. An struct is generated called <MethodName>Struct
 The struct has a field of each ref or out parameter and if the method returns a value it is also added as `returningValue`
-		public struct Class123Struct
+```C#
+	public struct Class123Struct
         {
             public string assd;
             public string dd;
         }
+```	
+
 2. Modify the method signature to return the new struct.		
+
 3. The return statements are modified to return an instance of <MethodName>Struct
+
 4. All ref and out modified from the method invocations and method declarations are removed.
 
 For the example above we will have:
-```
-     **`modified return type ==>`**   
+```C#
+     **modified return type ==>**   
 	 public Class123Struct Class123(string assd, string dd)
         {
             var ssfdsa = new Form1();
@@ -63,9 +68,10 @@ For the example above we will have:
             dd = "dsfs";
             if (assd == "")
                 return new Class123Struct() 
-                { assd = assd, dd = dd, }; **`<== modified return`**
+                { assd = assd, dd = dd, }; **<== modified return**
             return new Class123Struct()
-            { assd = assd, dd = dd, }; **`<== modified return`**
+            { assd = assd, dd = dd, }; **<== modified return**
         }
+```
 		
-NOTE: if the method has several overloads then several struct are generated appending a number to <MethodName>Struct<ConsecutiveNumber>		
+NOTE: if the method has several overloads then several struct are generated appending a number to `<MethodName>Struct<ConsecutiveNumber>`	
