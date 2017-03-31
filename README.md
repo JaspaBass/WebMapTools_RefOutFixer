@@ -58,7 +58,7 @@ The struct has a field of each ref or out parameter and if the method returns a 
 
 For the example above we will have:
 ```C#
-     **modified return type ==>**   
+     modified return type ==>   
 	 public Class123Struct Class123(string assd, string dd)
         {
             var ssfdsa = new Form1();
@@ -68,9 +68,9 @@ For the example above we will have:
             dd = "dsfs";
             if (assd == "")
                 return new Class123Struct() 
-                { assd = assd, dd = dd, }; **<== modified return**
+                { assd = assd, dd = dd, }; <== modified return
             return new Class123Struct()
-            { assd = assd, dd = dd, }; **<== modified return**
+            { assd = assd, dd = dd, }; <== modified return
         }
 ```
 		
