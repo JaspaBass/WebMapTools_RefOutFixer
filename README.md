@@ -29,6 +29,7 @@ Function: function name
 What the tool does
 ===================
 
+```C#
  public void Class123(ref string assd, out string dd)
         {
             var ssfdsa = new Form1();
@@ -39,6 +40,7 @@ What the tool does
             if (assd == "")
                 return;
         }
+```	
 		
 1. An struct is generated called <MethodName>Struct
 The struct has a field of each ref or out parameter and if the method returns a value it is also added as `returningValue`
