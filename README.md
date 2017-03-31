@@ -82,4 +82,11 @@ Just open the RefOutFixer.sln on VS2015 and rebuild. Some nugets must be install
 
 Running the Tool
 ================
+
 ![ToolScreenShot](Capture.PNG)
+
+You must provide the absolute path for the solution file and the Csharp project name.
+The replaces file must have the format given above.
+
+And example project can be found under the Samples folder
+
