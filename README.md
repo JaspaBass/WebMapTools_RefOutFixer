@@ -82,4 +82,4 @@ Just open the RefOutFixer.sln on VS2015 and rebuild. Some nugets must be install
 
 Running the Tool
 ================
-(ToolScreenShot)![Capture.PNG]
+[ToolScreenShot]!(Capture.PNG)
