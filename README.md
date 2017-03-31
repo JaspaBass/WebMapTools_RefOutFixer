@@ -74,4 +74,12 @@ For the example above we will have:
         }
 ```
 		
-NOTE: if the method has several overloads then several struct are generated appending a number to `<MethodName>Struct<ConsecutiveNumber>`	
+NOTE: if the method has several overloads then several struct are generated appending a number to `<MethodName>Struct<ConsecutiveNumber>`
+
+Building the tool
+=================
+Just open the RefOutFixer.sln on VS2015 and rebuild. Some nugets must be installed but VS will do it.
+
+Running the Tool
+================
+(ToolScreenShot)![Capture.PNG]
